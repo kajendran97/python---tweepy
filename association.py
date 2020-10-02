@@ -5,6 +5,8 @@ from gensim.parsing.preprocessing import remove_stopwords
 #load the data using pandas
 data = pd.read_csv("covid19.csv")
 
+print(data)
+
 tweet_text = data.loc[: ,"tweet_text"] #extract the tweet_text cloumn from csv
 tweet_text = tweet_text.dropna()  #remove the blank columns and rows
 cleaned_tweet_text = '' #creating the blank variable to load the data
